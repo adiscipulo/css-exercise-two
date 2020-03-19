@@ -1,13 +1,51 @@
 body {
-  background-color: #ff0000;
-  color: #0000FF;
+  /* modified contrast of text and bg color to positively impact the
+  readability of the content (7)*/
+  background-color: #FFFFFF;
+  color: #000000;
+  /* added to quickly adjust page font size (2) */
+  font-size: 16px;
+  font-family: "Arial";
 }
 
 nav {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   float: left;
   position: fixed;
   width: 100%;
+}
+
+/* added to appropriate sizes to the typography to accurately weight the
+importance of specific portions of the content provided (headlines, etc.)(3) */
+.story-text {
+  margin-top: 25px;
+}
+
+.author {
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 150%;
+  margin-top: .75em;
+}
+
+p {
+  font-size: 100%;
+  line-height: 150%; /* added to adjust line height to be readible (4) */
+  margin-bottom: 1.2em;
+}
+
+figcaption {
+  font-size: 0.9em;
 }
 
 .logo {
@@ -23,7 +61,8 @@ nav {
   width: 70%;
 }
 
-.left, .right {
+.left,
+.right {
   float: left;
   width: 50%;
 }
@@ -40,13 +79,34 @@ ul {
 li {
   float: right;
   padding: 30px;
+  /* All characters in navbar will be uppercase */
+  text-transform: uppercase;
 }
 
+/* added to remove underline but display interactivity. (6) */
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+} /* unvisited */
+a:visited {
+  color: #0070ba;
+  text-decoration: none;
+} /* visited */
+a:hover {
+  color: #0070bc;
+  text-decoration: underline;
+} /* mouse over */
+a:active {
+  color: #0070bd;
+  text-decoration: none;
+} /* selected */
+
 article {
-  padding-top: 100px;
+  padding-top: 100px; /* added so image is not initially covered by navbar */
 }
 
 .container {
   margin: 0 auto;
   width: 50%;
 }
+css-exercise-two
