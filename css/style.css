@@ -85,19 +85,19 @@ li {
 
 /* added to remove underline but display interactivity. (6) */
 a:link {
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
 } /* unvisited */
 a:visited {
-  color: #0070ba;
+  color: #000000;
   text-decoration: none;
 } /* visited */
 a:hover {
-  color: #0070bc;
+  color: red;
   text-decoration: underline;
 } /* mouse over */
 a:active {
-  color: #0070bd;
+  color: #f0f0f0;
   text-decoration: none;
 } /* selected */
 
@@ -109,4 +109,3 @@ article {
   margin: 0 auto;
   width: 50%;
 }
-css-exercise-two
